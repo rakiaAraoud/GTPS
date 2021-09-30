@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>GTPS</title>
+    <link rel="stylesheet" href="Assets/Template/index-styles.css">
+    <link rel="stylesheet" href="Assets/Template/styleAcceuil.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=freestyle script">
+    <script src="https://kit.fontawesome.com/e68d258f84.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="head-content">
+            <div class="logo-container">
+                <img src="Assets/images/mon_logo.png" alt="GTPS" id="logo">
+            </div>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            <div id="menu" class="navbar">
+                <div class="dropdown hover">
+                    <a href="#">Accueil</a>
+                    <ul>
+                        <li><a href="#">Santé</a></li>
+                        <li><a href="#">Espace parents</a></li>
+                        <li><a href="#">Espace enfants</a></li>
+                </div>
+
+                <div class="dropdown toggle">
+                    <input id="t1" type="checkbox" checked>
+                    <label for="t1">Services</label>
+                    <ul>
+                        <li><a href="#">Parcour Scolaire</a></li>
+                        <li><a href="#">Vie quotidienne</a></li>
+
+                    </ul>
+                </div>
+                <div class="dropdown hover">
+                    <a href="#">Contact</a>
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="search-bar">
+                <form action="#">
+                    <input type="search" />
+                </form>
+            </div>
+    </nav>
+    <header>
+        <h1>Guide Parentale des Troubles Scolaire</h1>
+
+    </header>
+    <section>
+        <article>
+            <!--<div class="continue"></div> -->
+
+            <div class="introTexte">
+                <h2>Introduction</h2>
+                <blockquote>
+                    <q>Il n'y a pas d'enfant difficile.<br />
+                        Ce qui est difficile,
+                        c'est d'être un enfant dans un monde<br />
+                        où les personnes sont fatiguées,
+                        occupées sans patience et pressées<br /></q>
+                    <p>&mdash; Maya Angelou</p>
+                </blockquote>
+
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio at molestias
+                    veritatis exercitationem! Explicabo ab pariatur tenetur doloremque! Sed nihil perferendis
+                    eos dicta autem nobis? Esse voluptatibus ex cupiditate hic!</p>
+            </div>
+            <div>
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="carrousel">
+                <img src="Assets/images/enfants.png" alt="image exemple">
+            </div>
+            <div>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+        </article>
+    </section>
+    <footer>
+        <div class="boite1">
+            <figure>
+                <i class="fas fa-book"></i>
+                <figcaption>Entourage</figcaption>
+            </figure>
+        </div>
+        <div class="boite2">
+            <figure>
+                <i class="fas fa-book"></i>
+                <figcaption>Jeux éducatifs</figcaption>
+            </figure>
+        </div>
+        <div class="boite3">
+            <figure>
+                <i class="fas fa-book"></i>
+                <figcaption>Santé et assistance</figcaption>
+            </figure>
+        </div>
+        <div class="boite4">
+            <figure>
+                <i class="fas fa-book"></i>
+                <figcaption>Suivre devoirs et leçons</figcaption>
+            </figure>
+        </div>
+    </footer>
+    
+    <script>
+        /*format mobile*/
+        function myFunction() {
+            var x = document.getElementById("menu");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
